@@ -50,18 +50,18 @@
 
       <div class="row">
 
-        {% for mo in mov.all %}
+        {% for ev in eve.all %}
           
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
             
-            <img class="bd-placeholder-img card-img-top " width="100%" height="225" src = "{{ mo.image.url }}" />
+            <img class="bd-placeholder-img card-img-top " width="100%" height="225" src = "{{ ev.event_image.url }}" />
 
         
               <div class="card-body">
 
                 <p class="card-text"></p>
-                {{ mo.summary }}
+                {{ ev.event_summary }}
                   
                 </div>
               </div>
