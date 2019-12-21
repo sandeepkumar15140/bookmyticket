@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bookmyticket', 
     'movie.apps.MovieConfig',
+    'ticketing.apps.TicketingConfig',
     
 ]
 

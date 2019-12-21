@@ -31,7 +31,7 @@
             </form>
         
             <a class="nav-link" href="{% url 'movie' %}">Movies </a>
-              <a class="nav-link" href="#">Book Tickets now</a>>
+              <a class="nav-link" href="{% url 'ticket' %}">Book Tickets</a>>
           
               </ul>
                     
@@ -60,12 +60,12 @@
               <div class="card-body">
 
                 <p class="card-text"></p>
-                {% endfor %}
+              
 
                 </div>
               </div>
             </div>
-            
+            {% endfor %}
           </div>
   
             
