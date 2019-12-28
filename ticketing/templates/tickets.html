@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">  
+  {% load staticfiles %}
   <head>
 
 
-    <title> Tickets </title>
+    <title>Book Tickets</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
 
@@ -15,8 +16,8 @@
     <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="{% url 'home' %}">
-        <img src=# class="d-inline-block align=top"/>
-        BookMyTicket</a>
+        <img src="{% static 'logo.png' %}" class="d-inline-block align=top"/>
+        OOkMyTicket</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,9 +30,13 @@
               </li>
         
             </form>
+            
         
             <a class="nav-link" href="{% url 'movie' %}">Movies </a>
-              <a class="nav-link" href="{% url 'ticket' %}">Book Tickets</a>>
+              <a class="nav-link" href="{% url 'ticket' %}">Book Tickets</a>
+              <a class="nav-link" href="{% url 'login' %}">Login</a>
+               <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+
           
               </ul>
                     
@@ -49,23 +54,23 @@
 
       <div class="row">
 
-    
+        
           
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
             
-            <img class="bd-placeholder-img card-img-top " width="100%" height="225" src = "{{ mo.image.url }}" />
+            <img class="bd-placeholder-img card-img-top " width="100%" height="225" src = "{{ ev.event_image.url }}" />
 
         
               <div class="card-body">
 
                 <p class="card-text"></p>
               
-
+                  
                 </div>
               </div>
             </div>
-    
+          
           </div>
   
             

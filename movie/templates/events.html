@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">  
+  {% load staticfiles %}
   <head>
 
 
@@ -15,8 +16,8 @@
     <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="{% url 'home' %}">
-        <img src=# class="d-inline-block align=top"/>
-        BookMyTicket</a>
+        <img src="{% static 'logo.png' %}" class="d-inline-block align=top"/>
+        OOkMyTicket</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,6 +34,9 @@
         
             <a class="nav-link" href="{% url 'movie' %}">Movies </a>
               <a class="nav-link" href="{% url 'ticket' %}">Book Tickets</a>
+              <a class="nav-link" href="{% url 'login' %}">Login</a>
+               <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+
           
               </ul>
                     
